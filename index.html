@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+    <link rel="stylesheet" href="/src/style.css">
+  </head>
+  <body>
+    <canvas id="app-canvas"></canvas>
+    <div class="controls display">
+      <ul>
+        <li>
+          <p>curve</p>
+          <input type="range" min="0" max="200" name="curve-input" id="curve-input">
+        </li>
+        <li>
+          <p>zoom</p>
+          <input type="range" step="0.01" max="0.4" name="zoom" id="zoom-input">
+        </li>
+        <li>
+          <p>cell size</p>
+          <input type="range" min="1" max="20" step="1" name="cell-size" id="cell-size-input">
+        </li>
+        <li>
+          <p>total particles</p>
+          <input type="range" min="1" max="4000" step="40" name="total-particles" id="total-particles-input">
+        </li>
+      </ul>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
